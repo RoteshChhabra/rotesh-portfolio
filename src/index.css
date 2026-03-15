@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000; /* Pure black */
+  --foreground: #f3f4f6; /* Gray 100 */
+  --muted: #9ca3af;      /* Gray 400 */
+  --muted-light: #1f2937;/* Gray 800 */
+  --primary: #10b981;    /* Emerald */
+  --border: #374151;     /* Gray 700 */
+}
+
+.light {
+  --background: #ffffff; /* Pure white */
+  --foreground: #0f172a; /* Slate 900 */
+  --muted: #475569;      /* Slate 600 */
+  --muted-light: #f1f5f9;/* Slate 100 */
+  --primary: #10b981;    /* Emerald */
+  --border: #e2e8f0;     /* Slate 200 */
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-primary: var(--primary);
+  --color-border: var(--border);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Custom styles for the minimalist redesign */
+.skill-pill {
+  background-color: var(--muted-light);
+  color: var(--foreground);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  display: inline-block;
+  border: 1px solid var(--border);
+}
+
+.opportunity-badge {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.opportunity-indicator {
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--primary);
+}
+
+/* Menu link transitions */
+.menu-link {
+  transition: all 0.2s ease;
+}
