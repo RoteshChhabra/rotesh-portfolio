@@ -1,21 +1,35 @@
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #000000; /* Pure black */
-  --foreground: #f3f4f6; /* Gray 100 */
-  --muted: #9ca3af;      /* Gray 400 */
-  --muted-light: #1f2937;/* Gray 800 */
-  --primary: #10b981;    /* Emerald */
-  --border: #374151;     /* Gray 700 */
+  --background: #000000;
+  /* Pure black */
+  --foreground: #f3f4f6;
+  /* Gray 100 */
+  --muted: #9ca3af;
+  /* Gray 400 */
+  --muted-light: #1f2937;
+  /* Gray 800 */
+  --primary: #10b981;
+  /* Emerald */
+  --border: #374151;
+  /* Gray 700 */
 }
 
 .light {
-  --background: #ffffff; /* Pure white */
-  --foreground: #0f172a; /* Slate 900 */
-  --muted: #475569;      /* Slate 600 */
-  --muted-light: #f1f5f9;/* Slate 100 */
-  --primary: #10b981;    /* Emerald */
-  --border: #e2e8f0;     /* Slate 200 */
+  --background: #ffffff;
+  /* Pure white */
+  --foreground: #0f172a;
+  /* Slate 900 */
+  --muted: #475569;
+  /* Slate 600 */
+  --muted-light: #f1f5f9;
+  /* Slate 100 */
+  --primary: #10b981;
+  /* Emerald */
+  --border: #e2e8f0;
+  /* Slate 200 */
 }
 
 @theme {
@@ -47,7 +61,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Inter', system-ui, sans-serif;
   letter-spacing: -0.025em;
 }
