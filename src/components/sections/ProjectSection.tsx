@@ -2,6 +2,8 @@
 
 import { MonitorPlay } from "lucide-react";
 import { projects } from "../../data/portfolio";
+import { Github } from "lucide-react";
+
 
 const ProjectsSection = () => {
     return (
@@ -25,10 +27,19 @@ const ProjectsSection = () => {
                             <MonitorPlay className="w-5 h-5 text-foreground hidden sm:block absolute -left-10" />
                             Featured
                         </span> */}
+                        <div className="flex items-center gap-4 mb-8">
 
-                        <h3 className="text-4xl md:text-2xl font-semibold text-foreground mb-8 transition-colors group-hover:text-primary">
-                            {project.title}
-                        </h3>
+                            <a href="https://github.com/RoteshChhabra/rotesh-portfolio"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="flex items-center gap-4 group"
+                            >
+                                <h3 className="text-2xl md:text-3xl font-semibold text-foreground transition-colors group-hover:text-primary">
+                                    {project.title}
+                                </h3>
+                                <Github className="w-6 h-6 text-muted group-hover:text-primary transition-colors flex-shrink-0" />
+                            </a>
+                        </div>
 
                         <p className="text-muted text-xl md:text-2xl leading-relaxed font-light mb-12 max-w-3xl">
                             {project.description}

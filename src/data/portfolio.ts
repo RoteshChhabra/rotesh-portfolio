@@ -51,10 +51,10 @@ export const experiences = [
 
 export const projects = [
     {
-        title: "IVR Self-Service",
+        title: "Portfolio Website",
         description:
-            "Serverless AWS application designed to automate customer service inquiries, successfully reducing agent-handled calls by 43%.",
-        tags: ["AWS Lambda", "DynamoDB", "API Gateway"],
+            "A modern, responsive portfolio website built with React and TypeScript to showcase my skills and projects.",
+        tags: ["React", "TypeScript", "Tailwind CSS"],
     },
     {
         title: "Config Management App",

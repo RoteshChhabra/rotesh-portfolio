@@ -14,9 +14,7 @@ const AboutSection = () => {
 
             <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24 w-full">
                 <p className="text-muted  md:text-3xl lg:text-4xl leading-relaxed w-full font-light text-justify">
-                    I am a full-stack software engineer who have spent 6+ years turning caffeine into cloud-native software.
-                    I build high-availability platforms - from pixel-perfect UIs to the infrastructure nobody sees but everyone depends on, that scale, perform, and somehow always ship on time.
-                </p>
+                    I’m a full-stack software engineer with 6+ years of experience building cloud-native applications. I focus on creating scalable, reliable systems—from polished user interfaces to the underlying infrastructure.</p>
                 <div className="flex-shrink-0">
                     <img
                         src={profilePhoto}
